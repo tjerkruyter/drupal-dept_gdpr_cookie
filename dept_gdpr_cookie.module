@@ -1,0 +1,28 @@
+<?php
+
+function dept_gdpr_cookie_menu()
+{
+
+    $items['admin/config/dept'] = array(
+        'title' => 'Dept',
+        'description' => 'Configure Dept specific settings',
+        'position' => 'left',
+        'weight' => -20,
+        'page callback' => 'system_admin_menu_block_page',
+        'access arguments' => array('access administration pages'),
+        'file' => 'system.admin.inc',
+        'file path' => drupal_get_path('module', 'system'),
+    );
+
+    $items['admin/config/dept/gdpr/cookies'] = [
+        'title'            => t('Cookie GDPR settings'),
+        'description'      => t('Manage cookie settings'),
+        'page callback'    => 'drupal_get_form',
+        'page arguments'   => ['dept_gdpr_admin_cookie_settings_form'],
+        'access arguments' => ['administer nodes'],
+        'file'             => 'includes/gdpr.admin.inc',
+        'weight' => 20,
+    ];
+
+    return $items;
+}

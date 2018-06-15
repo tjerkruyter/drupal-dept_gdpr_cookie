@@ -1,0 +1,9 @@
+; Basic module description
+name = Dept GDPR cookie
+description = Functionality for cookie bar
+configure = admin/config/people/dept/gdpr/cookies
+package = Dept
+core = 7.x
+version = 1.0
+php = 5.6
+dependencies[] = dept_gdpr

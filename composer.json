@@ -1,0 +1,24 @@
+{
+  "name": "drupal/dept_gdpr_cookie",
+  "type": "drupal-module",
+  "description": "Functionality for drupal 7 cookie bar",
+  "keywords": [
+    "Drupal"
+  ],
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "PHP team",
+      "email": "php@tamtam.nl"
+    }
+  ],
+  "homepage": "https://www.tamtam.nl",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "php@tamtam.nl",
+    "source": "https://github.com/tjerkruyter/drupal-dept_gdpr_cookie.git"
+  },
+  "require": {
+    "drupal/components": "~1.0"
+  }
+}
